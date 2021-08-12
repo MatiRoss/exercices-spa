@@ -11,7 +11,7 @@ class App extends ε.Component {
     //     </div>
     render() {
         const header = new Header()
-        return ε.createHtmlElement('div', {}, header)
+        return ε.createHtmlElement('div', {id : "main"}, header)
 
     }
 }
