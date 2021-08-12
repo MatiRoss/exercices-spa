@@ -1,2 +1,13 @@
 // Ecrivez le type des clés d'un élément
-export interface Element {};
+import {Component} from "./index";
+
+export interface Element {
+    tagName: string,
+    child: Element[] | any,
+    attributes: Attributes[],
+
+}
+
+interface Attributes {
+    key: any
+}
