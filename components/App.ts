@@ -1,17 +1,15 @@
 import * as ε from '../tools/ε/';
-
-// import components
 import Header from './Header';
+import Section from "./Section";
+
 
 class App extends ε.Component {
-// We want to render html like: 
 
-    //     <div>
-    //       <Header />
-    //     </div>
     render() {
+
+        const section = new Section()
         const header = new Header()
-        return ε.createHtmlElement('div', {id : "main"}, header)
+        return ε.createHtmlElement('div', {id: "main"}, [header, section])
 
     }
 }
